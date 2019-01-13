@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link href="layout.scss" type="text/css" compressed scoped />
+    <script type="text/javascript" src="../js/jquery.min.js" compressed></script>
+    <script type="text/javascript" src="layout.js" compressed></script>
+  </head>
+  <body>
+    <div class="l-site">
+      <div class="l-nav">
+        <nav class="nav">
+          <ul>
+            <li class="nav-primary">
+              <a href="#">VIDEOS</a>
+            </li>
+            <li class="nav-primary">
+              <a href="{pages.blogs.url}">BLOG</a>
+            </li>
+            <li class="nav-primary">
+              <a href="{pages.home.url}">PROJECTS</a>
+            </li>
+            <li class="nav-primary">
+              <a href="{pages.about.url}">ABOUT</a>
+            </li>
+            <li class="nav-secondary">
+              <a href="https://github.com/kevinponce">GITHUB</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="l-page">
+        <div class="menu">
+          <div class="menu-hamburger {menu-theme || 'light'}"></div>
+        </div>
+        <div class="child-wrapper">{children}</div>
+      </div>
+    </div>
+  </body>
+</html>
