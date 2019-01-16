@@ -31240,15 +31240,21 @@ import numpy as np
 
 cap = cv2.VideoCapture(0)
 
-while True:
-ret, frame = cap.read();
-cv2.imshow('frame', frame)
+fourcc = cv2.VideoWriter_fourcc('M','J','P','G')
+out = cv2.VideoWriter()
+succes = out.open('output.avi',fourcc, 15.0, (1280,720),True)
 
+while True:
+ret, frame = cap.read()
+cv2.imshow('frame', frame)
+out.write(frame)
 
 if cv2.waitKey(1) & 0xff == ord('q'):
 break
 
 cap.release();
+out.release();
+
 cv2.destroyAllWindows()</textarea>
                 </div>
                 <p>Voila.</p>
