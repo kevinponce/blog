@@ -17298,7 +17298,11 @@ crop_img = img[77:100,45:100]
 cv2.imshow("cropped", crop_img)
 
 cv2.waitKey(0)
-cv2.destroyAllWindows()</textarea>
+cv2.destroyAllWindows()
+
+front_top_center_img = img[67:87,45:63]
+example_croped = os.path.join(example, "example_croped.jpeg")
+cv2.imwrite(example_croped, example)</textarea>
                 </div>
               </div>
               <div class="blog-tags">
