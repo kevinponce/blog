@@ -17287,9 +17287,11 @@
                       background: none
                     }
                   </style>
-                  <textarea id='demotext' class="code-pad">$ mkdir example
+                  <textarea id='demotext' class="code-pad">
+$ mkdir example
 $ cd example
-$ npm init</textarea>
+$ npm init
+</textarea>
                 </div>
 
                 <h2>Install and config dependencies</h2>
@@ -17297,8 +17299,10 @@ $ npm init</textarea>
                   <!-- type="text/javascript" once >already included</!-->
                   <!-- type="text/javascript" once >already included</!-->
                   <link href="codemirror.css" type="text/css" compressed once />
-                  <textarea id='demotext' class="code-pad">$ npm install babel-cli babel-preset-es2015 babel-register babel-core babel-polyfill babel-loader babel-preset-stage-0 --save-dev
-$ touch .babelrc</textarea>
+                  <textarea id='demotext' class="code-pad">
+$  npm install babel-cli babel-preset-es2015 babel-register babel-core babel-polyfill  babel-loader babel-preset-stage-0 --save-dev
+$ touch .babelrc
+</textarea>
                 </div>
 
                 <h3>add to .babelrc</h3>
@@ -17318,9 +17322,11 @@ $ touch .babelrc</textarea>
                   <!-- type="text/javascript" once >already included</!-->
                   <!-- type="text/javascript" once >already included</!-->
                   <link href="codemirror.css" type="text/css" compressed once />
-                  <textarea id='demotext' class="code-pad">$ mkdir src
+                  <textarea id='demotext' class="code-pad">
+$ mkdir src
 $ mkdir lib
-$ touch src/index.js</textarea>
+$ touch src/index.js
+</textarea>
                 </div>
 
                 <h2>Add to src/index.js</h2>
@@ -17328,14 +17334,18 @@ $ touch src/index.js</textarea>
                   <!-- type="text/javascript" once >already included</!-->
                   <!-- type="text/javascript" once >already included</!-->
                   <link href="codemirror.css" type="text/css" compressed once />
-                  <textarea id='demotext' class="code-pad">require('babel-polyfill');
+                  <textarea id='demotext' class="code-pad">
+require('babel-polyfill');
 export default class Example {
-this.str = str
-}
+  constructor(str) {
+    this.str = str
+  }
 
-excit() {this.str}!`
+  excit() {
+    return `${this.str}!`
+  }
 }
-}</textarea>
+</textarea>
                 </div>
 
                 <h3>add to package.json</h3>
@@ -17343,139 +17353,121 @@ excit() {this.str}!`
                   <!-- type="text/javascript" once >already included</!-->
                   <!-- type="text/javascript" once >already included</!-->
                   <link href="codemirror.css" type="text/css" compressed once />
-                  <textarea id='demotext' class="code-pad">{
-"build": "babel src --out-dir lib",
-"prepublish": "npm run build"
+                  <textarea id='demotext' class="code-pad">
+{
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "prepublish": "npm run build"
+  }
 }
-}
-<div class=" pds-blogs-post-param pds-blogs-post-param-code">
-  <!-- type="text/javascript" once >already included</!-->
-  <!-- type="text/javascript" once >already included</!-->
-  <link href="codemirror.css" type="text/css" compressed once />
-  <textarea id='demotext' class="code-pad">$ npm run build
+</textarea>
+                </div>
+                <div class=" pds-blogs-post-param pds-blogs-post-param-code">
+                  <!-- type="text/javascript" once >already included</!-->
+                  <!-- type="text/javascript" once >already included</!-->
+                  <link href="codemirror.css" type="text/css" compressed once />
+                  <textarea id='demotext' class="code-pad">
 
-<h2>Test</h2>
-<div class=" pds-blogs-post-param pds-blogs-post-param-code">
-  <!-- type="text/javascript" once >already included</!-->
-  <!-- type="text/javascript" once >already included</!-->
-  <link href="codemirror.css" type="text/css" compressed once />
-  <textarea id='demotext' class="code-pad">## create new project
+$ npm run build
+
+<h2 class="pds-blogs-post-param">Test</h2>
+<code raw  class="pds-blogs-post-param">
+## create new project
 $ mkdir test_example
 $ cd test_example
 $ npm init
 $ npm install ../example
-$ touch index.js</textarea>
-                </div>
+$ touch index.js
+</code>
 
-                <h3>add to index.js</h3>
-                <div class=" pds-blogs-post-param pds-blogs-post-param-code">
-                  <!-- type="text/javascript" once >already included</!-->
-                  <!-- type="text/javascript" once >already included</!-->
-                  <link href="codemirror.css" type="text/css" compressed once />
-                  <textarea id='demotext' class="code-pad">var ex = require(‘example’);
-console.log(new ex(‘hello’).excit())</textarea>
-                </div>
+<h3 class="pds-blogs-post-param">add to index.js</h3>
+<code raw  class="pds-blogs-post-param">
+var ex = require(‘example’);
+console.log(new ex(‘hello’).excit())
+</code>
 
-                <h2>setup git</h2>
-                <div class=" pds-blogs-post-param pds-blogs-post-param-code">
-                  <!-- type="text/javascript" once >already included</!-->
-                  <!-- type="text/javascript" once >already included</!-->
-                  <link href="codemirror.css" type="text/css" compressed once />
-                  <textarea id='demotext' class="code-pad">$ git init
+<h2 class="pds-blogs-post-param">setup git</h2>
+<code raw  class="pds-blogs-post-param">
+$ git init
 $ git add .
 $ commit -m "init example"
 $ touch .gitignore
-$ touch .npmignore</textarea>
-                </div>
+$ touch .npmignore
+</code>
 
-                <h3>add to .gitignore</h3>
-                <div class=" pds-blogs-post-param pds-blogs-post-param-code">
-                  <!-- type="text/javascript" once >already included</!-->
-                  <!-- type="text/javascript" once >already included</!-->
-                  <link href="codemirror.css" type="text/css" compressed once />
-                  <textarea id='demotext' class="code-pad">.DS_STORE
+<h3 class="pds-blogs-post-param">add to .gitignore</h3>
+<code raw  class="pds-blogs-post-param">
+.DS_STORE
 node_modules
 build/
 .module-cache
 *.log*
-lib</textarea>
+lib
+</code>
+
+
+<h3 class="pds-blogs-post-param">add to .npmignore</h3>
+<code raw  class="pds-blogs-post-param">
+node_modules
+src
+</code>
+
+
+<h4 class="pds-blogs-post-param">Sign up for git up at github.com</h4>
+<h4 class="pds-blogs-post-param">Create example repo </h4>
+
+<code raw  class="pds-blogs-post-param">
+$ git remote add origin git@github.com:kevinponce/example.git
+</code>
+
+<h4 class="pds-blogs-post-param">Check if it add remote origin</h4>
+<code raw  class="pds-blogs-post-param">
+$ git remote -v
+</code>
+
+<h2 class="pds-blogs-post-param">setup npm for project</h2>
+<code raw  class="pds-blogs-post-param">
+$ npm adduser
+$ npm publish
+</code>
+
+<p class="pds-blogs-post-param">If that fails, change project name package.json to be like "name": "@your_username/example"</p>
+
+
+<p class="pds-blogs-post-param">Voila</p>
+</textarea>
                 </div>
-
-
-                <h3>add to .npmignore</h3>
-                <div class=" pds-blogs-post-param pds-blogs-post-param-code">
-                  <!-- type="text/javascript" once >already included</!-->
-                  <!-- type="text/javascript" once >already included</!-->
-                  <link href="codemirror.css" type="text/css" compressed once />
-                  <textarea id='demotext' class="code-pad">node_modules
-src</textarea>
-                </div>
-
-
-                <h4>Sign up for git up at github.com</h4>
-                <h4>Create example repo </h4>
-
-                <div class=" pds-blogs-post-param pds-blogs-post-param-code">
-                  <!-- type="text/javascript" once >already included</!-->
-                  <!-- type="text/javascript" once >already included</!-->
-                  <link href="codemirror.css" type="text/css" compressed once />
-                  <textarea id='demotext' class="code-pad">$ git remote add origin git@github.com:kevinponce/example.git</textarea>
-                </div>
-
-                <h4>Check if it add remote origin</h4>
-                <div class=" pds-blogs-post-param pds-blogs-post-param-code">
-                  <!-- type="text/javascript" once >already included</!-->
-                  <!-- type="text/javascript" once >already included</!-->
-                  <link href="codemirror.css" type="text/css" compressed once />
-                  <textarea id='demotext' class="code-pad">$ git remote -v</textarea>
-                </div>
-
-                <h2>setup npm for project</h2>
-                <div class=" pds-blogs-post-param pds-blogs-post-param-code">
-                  <!-- type="text/javascript" once >already included</!-->
-                  <!-- type="text/javascript" once >already included</!-->
-                  <link href="codemirror.css" type="text/css" compressed once />
-                  <textarea id='demotext' class="code-pad">$ npm adduser
-$ npm publish</textarea>
-                </div>
-
-                <p>If that fails, change project name package.json to be like "name": "@your_username/example"</p>
-
-
-                <p>Voila</p></textarea>
-              </div></textarea>
+              </div>
+              <div class="blog-tags">
+                <ul>
+                  <li><a href="#">blog</a></li>
+                  <li><a href="#">js</a></li>
+                  <li><a href="#">es6</a></li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="blog-tags">
-            <ul>
-              <li><a href="#">blog</a></li>
-              <li><a href="#">js</a></li>
-              <li><a href="#">es6</a></li>
-            </ul>
-          </div>
-        </div>
 
-        <div class="blog-footer">
-          <ul>
-            <li class="published-date">1/20</li>
-          </ul>
+            <div class="blog-footer">
+              <ul>
+                <li class="published-date">1/20</li>
+              </ul>
+            </div>
+            <script type="text/javascript">
+              ! function() {
+                var r;
+                (r = ".code-pad", Array.apply(null, document.querySelectorAll(r))).forEach(function(r) {
+                  CodeMirror.fromTextArea(r, {
+                    mode: "python",
+                    lineNumbers: !0,
+                    matchBrackets: !0,
+                    readOnly: "nocursor"
+                  }).setSize(null, 100)
+                })
+              }();
+            </script>
+          </div>
         </div>
-        <script type="text/javascript">
-          ! function() {
-            var r;
-            (r = ".code-pad", Array.apply(null, document.querySelectorAll(r))).forEach(function(r) {
-              CodeMirror.fromTextArea(r, {
-                mode: "python",
-                lineNumbers: !0,
-                matchBrackets: !0,
-                readOnly: "nocursor"
-              }).setSize(null, 100)
-            })
-          }();
-        </script>
       </div>
-    </div>
-    </div>
     </div>
   </body>
 
