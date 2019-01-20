@@ -17334,13 +17334,14 @@ cv2.destroyAllWindows()</textarea>
             </div>
             <script type="text/javascript">
               ! function() {
-                var r;
-                (r = ".code-pad", Array.apply(null, document.querySelectorAll(r))).forEach(function(r) {
-                  CodeMirror.fromTextArea(r, {
+                var e;
+                (e = ".code-pad", Array.apply(null, document.querySelectorAll(e))).forEach(function(e) {
+                  CodeMirror.fromTextArea(e, {
                     mode: "python",
                     lineNumbers: !0,
                     matchBrackets: !0,
-                    readOnly: "nocursor"
+                    readOnly: "nocursor",
+                    lineWiseCopyCut: !0
                   }).setSize(null, 100)
                 })
               }();
