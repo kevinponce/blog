@@ -11,6 +11,7 @@
   "dependencies": {
     "i": "^0.3.6",
     "npm": "^6.4.1",
-    "poopy-di-scoop": "file:../poopy-di-scoop"
+    "poopy-di-scoop": "file:../poopy-di-scoop",
+    "poopy-di-scoop-cms": "file:../poopy-di-scoop-cms"
   }
 }

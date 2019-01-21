@@ -1,6 +1,7 @@
 var poopDiScoop = require('poopy-di-scoop').default;
 var pds = new poopDiScoop({
-  rootDir: './'
+  rootDir: './',
+  githubName: 'blog'
 });
 (async function () {
   await pds.load();

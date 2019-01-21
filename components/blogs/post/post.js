@@ -7,7 +7,8 @@
       mode: "python",
       lineNumbers: true,
       matchBrackets: true,
-      readOnly: "nocursor"
+      readOnly: true,
+      lineWiseCopyCut: true
     });
     cm.setSize(null, 100);
   });
