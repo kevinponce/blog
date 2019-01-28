@@ -17307,53 +17307,49 @@ $ ifconfig</textarea>
                   <!-- type="text/javascript" once >already included javascript</!-->
                   <!-- type="text/javascript" once >already included javascript</!-->
                   <!-- type="text/css" compressed  once >already included style sheet</!-->
-                  <textarea id='demotext' class="code-pad">$ nmap -n -sP <Your IP Address class="pds-blogs-post-param">/24
+                  <textarea id='demotext' class="code-pad">
+$ nmap -n -sP <Your IP  Address  class="pds-blogs-post-param">/24
 
-  <p>if that does not work change last number in ip to 0</p>
+<p>if that does not work change last number in ip to 0</p>
 
-  <p>look for ip that is not current ip</p>
-  <div class=" pds-blogs-post-param pds-blogs-post-param-code">
-    <!-- type="text/javascript" once >already included javascript</!-->
-    <!-- type="text/javascript" once >already included javascript</!-->
-    <!-- type="text/css" compressed  once >already included style sheet</!-->
-    <textarea id='demotext' class="code-pad">$ ssh pi@<ip-from-above>
+<p>look for ip that is not current ip</p>
+<code raw>
+$ ssh pi@<ip-from-above>
 
-  <p>Voila</p>
-</ip-from-above></textarea>
+<p>Voila</p>
+</ip-from-above></code></Your></textarea>
                 </div>
-                </Your></textarea>
+              </div>
+              <div class="blog-tags">
+                <ul>
+                  <li><a href="#">blog</a></li>
+                  <li><a href="#">raspberry</a></li>
+                </ul>
               </div>
             </div>
-            <div class="blog-tags">
+
+            <div class="blog-footer">
               <ul>
-                <li><a href="#">blog</a></li>
-                <li><a href="#">raspberry</a></li>
+                <li class="published-date">1/29</li>
               </ul>
             </div>
+            <script type="text/javascript">
+              ! function() {
+                var e;
+                (e = ".code-pad", Array.apply(null, document.querySelectorAll(e))).forEach(function(e) {
+                  CodeMirror.fromTextArea(e, {
+                    mode: "python",
+                    lineNumbers: !0,
+                    matchBrackets: !0,
+                    readOnly: !0,
+                    lineWiseCopyCut: !0
+                  }).setSize(null, 100)
+                })
+              }();
+            </script>
           </div>
-
-          <div class="blog-footer">
-            <ul>
-              <li class="published-date">1/29</li>
-            </ul>
-          </div>
-          <script type="text/javascript">
-            ! function() {
-              var e;
-              (e = ".code-pad", Array.apply(null, document.querySelectorAll(e))).forEach(function(e) {
-                CodeMirror.fromTextArea(e, {
-                  mode: "python",
-                  lineNumbers: !0,
-                  matchBrackets: !0,
-                  readOnly: !0,
-                  lineWiseCopyCut: !0
-                }).setSize(null, 100)
-              })
-            }();
-          </script>
         </div>
       </div>
-    </div>
     </div>
   </body>
 
