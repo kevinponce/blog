@@ -1,26 +1,26 @@
-<html class=" pds-blogs pds-blogs-layout">
+<html class=" pds-blogs-post pds-blogs-post-layout">
 
   <head>
     <style type="text/css">
       @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300,600,800,400);
 
-      html.pds-blogs-layout,
-      .pds-blogs-layout html,
-      .pds-blogs-layout body {
+      html.pds-blogs-post-layout,
+      .pds-blogs-post-layout html,
+      .pds-blogs-post-layout body {
         margin: 0;
         padding: 0;
         background: #5d676c;
         font-family: 'Open Sans', sans-serif
       }
 
-      .pds-blogs-layout .l-site {
+      .pds-blogs-post-layout .l-site {
         margin: 0 auto;
         max-width: 1600px;
         position: relative;
         z-index: 1
       }
 
-      .pds-blogs-layout .l-site:before {
+      .pds-blogs-post-layout .l-site:before {
         content: "";
         position: fixed;
         top: 0;
@@ -32,7 +32,7 @@
         z-index: 1
       }
 
-      .pds-blogs-layout .l-page {
+      .pds-blogs-post-layout .l-page {
         position: relative;
         margin-left: 240px;
         background: #fff;
@@ -41,7 +41,7 @@
         transition: 0.35s
       }
 
-      .pds-blogs-layout .l-nav {
+      .pds-blogs-post-layout .l-nav {
         position: absolute;
         width: 240px;
         display: block;
@@ -52,7 +52,7 @@
         z-index: 3
       }
 
-      .pds-blogs-layout .nav {
+      .pds-blogs-post-layout .nav {
         width: 180px;
         position: fixed;
         top: 0;
@@ -62,19 +62,19 @@
         overflow: auto
       }
 
-      .pds-blogs-layout .nav ul {
+      .pds-blogs-post-layout .nav ul {
         margin: 0;
         padding: 0;
         list-style: none
       }
 
-      .pds-blogs-layout .nav li {
+      .pds-blogs-post-layout .nav li {
         margin: 0;
         padding: 0;
         transition: 0.25s
       }
 
-      .pds-blogs-layout .nav a {
+      .pds-blogs-post-layout .nav a {
         color: #fff;
         text-decoration: none;
         font-size: 20px;
@@ -83,23 +83,23 @@
         padding: 10px 0
       }
 
-      .pds-blogs-layout .nav .nav-primary {
+      .pds-blogs-post-layout .nav .nav-primary {
         opacity: 1
       }
 
-      .pds-blogs-layout .nav .nav-primary:hover {
+      .pds-blogs-post-layout .nav .nav-primary:hover {
         opacity: 0.7
       }
 
-      .pds-blogs-layout .nav .nav-secondary {
+      .pds-blogs-post-layout .nav .nav-secondary {
         opacity: 0.4
       }
 
-      .pds-blogs-layout .nav .nav-secondary:hover {
+      .pds-blogs-post-layout .nav .nav-secondary:hover {
         opacity: 0.7
       }
 
-      .pds-blogs-layout .menu {
+      .pds-blogs-post-layout .menu {
         display: none;
         position: fixed;
         top: 25px;
@@ -110,17 +110,17 @@
         z-index: 10
       }
 
-      .pds-blogs-layout .menu:hover .menu-hamburger:before,
-      .pds-blogs-layout .menu:hover .menu-hamburger:after {
+      .pds-blogs-post-layout .menu:hover .menu-hamburger:before,
+      .pds-blogs-post-layout .menu:hover .menu-hamburger:after {
         width: 24px
       }
 
-      .pds-blogs-layout .menu.is-active .menu-hamburger {
+      .pds-blogs-post-layout .menu.is-active .menu-hamburger {
         background: none
       }
 
-      .pds-blogs-layout .menu.is-active .menu-hamburger:before,
-      .pds-blogs-layout .menu.is-active .menu-hamburger:after {
+      .pds-blogs-post-layout .menu.is-active .menu-hamburger:before,
+      .pds-blogs-post-layout .menu.is-active .menu-hamburger:after {
         top: 0;
         width: 24px;
         -webkit-transform: rotate(45deg);
@@ -128,19 +128,19 @@
         transform: rotate(45deg)
       }
 
-      .pds-blogs-layout .menu.is-active .menu-hamburger:after {
+      .pds-blogs-post-layout .menu.is-active .menu-hamburger:after {
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         transform: rotate(-45deg)
       }
 
-      .pds-blogs-layout .menu.is-active .menu-hamburger:hover {
+      .pds-blogs-post-layout .menu.is-active .menu-hamburger:hover {
         -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
         transform: scale(1.2)
       }
 
-      .pds-blogs-layout .menu-hamburger {
+      .pds-blogs-post-layout .menu-hamburger {
         position: relative;
         width: 24px;
         height: 4px;
@@ -150,8 +150,8 @@
         transition: all 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
       }
 
-      .pds-blogs-layout .menu-hamburger:before,
-      .pds-blogs-layout .menu-hamburger:after {
+      .pds-blogs-post-layout .menu-hamburger:before,
+      .pds-blogs-post-layout .menu-hamburger:after {
         content: '';
         display: block;
         width: 24px;
@@ -162,25 +162,25 @@
         transition: all 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
       }
 
-      .pds-blogs-layout .menu-hamburger:before {
+      .pds-blogs-post-layout .menu-hamburger:before {
         top: -8px;
         left: 0;
         width: 22px
       }
 
-      .pds-blogs-layout .menu-hamburger:after {
+      .pds-blogs-post-layout .menu-hamburger:after {
         top: 8px;
         width: 16px;
         left: 0
       }
 
-      .pds-blogs-layout .menu-hamburger.dark,
-      .pds-blogs-layout .menu-hamburger.dark:before,
-      .pds-blogs-layout .menu-hamburger.dark:after {
+      .pds-blogs-post-layout .menu-hamburger.dark,
+      .pds-blogs-post-layout .menu-hamburger.dark:before,
+      .pds-blogs-post-layout .menu-hamburger.dark:after {
         background: #000
       }
 
-      .pds-blogs-layout .child-wrapper {
+      .pds-blogs-post-layout .child-wrapper {
         background-color: #fff;
         float: left;
         width: 100%;
@@ -189,53 +189,53 @@
       }
 
       @media screen and (max-width: 980px) {
-        .pds-blogs-layout .menu {
+        .pds-blogs-post-layout .menu {
           display: block
         }
 
-        .pds-blogs-layout .l-site.is-open {
+        .pds-blogs-post-layout .l-site.is-open {
           overflow: hidden
         }
 
-        .pds-blogs-layout .l-site.is-open .l-page {
+        .pds-blogs-post-layout .l-site.is-open .l-page {
           transform: translateX(240px)
         }
 
-        .pds-blogs-layout .l-page {
+        .pds-blogs-post-layout .l-page {
           margin-left: 0;
           z-index: 3
         }
 
-        .pds-blogs-layout .l-nav {
+        .pds-blogs-post-layout .l-nav {
           z-index: 2
         }
       }
 
-      html.pds-blogs-layout,
-      .pds-blogs-layout html {
+      html.pds-blogs-post-layout,
+      .pds-blogs-post-layout html {
         font-size: 10px
       }
 
       @media only screen and (max-width: 1024px) {
 
-        html.pds-blogs-layout,
-        .pds-blogs-layout html {
+        html.pds-blogs-post-layout,
+        .pds-blogs-post-layout html {
           font-size: 9.411764705882353px
         }
       }
 
       @media only screen and (max-width: 768px) {
 
-        html.pds-blogs-layout,
-        .pds-blogs-layout html {
+        html.pds-blogs-post-layout,
+        .pds-blogs-post-layout html {
           font-size: 10px
         }
       }
 
       @media only screen and (max-width: 400px) {
 
-        html.pds-blogs-layout,
-        .pds-blogs-layout html {
+        html.pds-blogs-post-layout,
+        .pds-blogs-post-layout html {
           font-size: 9.411764705882353px
         }
       }
@@ -3210,336 +3210,225 @@
           <div class="menu-hamburger light"></div>
         </div>
         <div class="child-wrapper">
-          <div class="blogs-wrapper">
-            <style type="text/css">
-              @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+          <style type="text/css">
+            body {
+              background: #e5ded8;
+              box-sizing: border-box
+            }
 
-              .pds-blogs .blogs-wrapper {
-                background-color: #ffffff;
-                font-family: 'Noto Sans', sans-serif;
-                text-align: center
-              }
+            .blog-container {
+              background: #fff;
+              box-shadow: rgba(0, 0, 0, 0.2) 0 4px 2px -2px;
+              font-family: "adelle-sans", sans-serif;
+              font-weight: 100;
+              margin: 0px auto;
+              width: 100%
+            }
 
-              .pds-blogs h3 {
-                margin-top: 10px;
-                margin-bottom: 20px;
-                font-size: 24px;
-                font-weight: 700
-              }
+            .blog-container a {
+              color: #4d4dff;
+              text-decoration: none;
+              transition: .25s ease
+            }
 
-              .pds-blogs h3 span {
-                font-weight: 400;
-                padding-left: 8px;
-                color: #9f9e9f;
-                font-style: italic;
-                font-size: 18px
-              }
+            .blog-container a:hover {
+              border-color: #3a4043;
+              color: #3a4043
+            }
 
-              .pds-blogs h3 span i {
-                display: inline-block;
-                width: 3px;
-                margin-right: 6px;
-                height: 14px;
-                background-color: #6295ca;
-                position: relative;
-                transform: skewX(-15deg)
-              }
+            .blog-cover {
+              background-size: cover;
+              height: 15rem;
+              box-shadow: inset rgba(0, 0, 0, 0.2) 0 64px 64px 16px
+            }
 
-              .pds-blogs h3 span i:before {
-                content: "";
-                width: 3px;
-                height: 14px;
-                display: inline-block;
-                position: absolute;
-                bottom: 0;
-                left: 3px;
-                background-color: #13274c
-              }
+            .blog-body {
+              margin: 0 auto;
+              width: 80%
+            }
 
-              .pds-blogs h3 span i:after {
-                content: "";
-                width: 3px;
-                height: 14px;
-                display: inline-block;
-                position: absolute;
-                bottom: 0;
-                left: 6px;
-                background-color: #d1253b
-              }
+            .video-body {
+              height: 100%;
+              width: 100%
+            }
 
-              .pds-blogs p {
-                color: #9f9e9f;
-                font-size: 14px;
-                line-height: 1.6em;
-                height: 100px
-              }
+            .blog-title h1 a {
+              color: #333;
+              font-weight: 100
+            }
 
-              .pds-blogs .blog-post-wrapper {
-                width: 33.33%;
-                float: left
-              }
+            .blog-summary p {
+              color: #4d4d4d
+            }
 
-              .pds-blogs .blog-post {
-                width: 90%;
-                margin: 5%;
-                background-color: #fff;
-                border-radius: 10px;
-                float: left;
-                overflow: hidden;
-                -webkit-box-shadow: 0px 9px 13px 0px rgba(0, 0, 0, 0.3);
-                -moz-box-shadow: 0px 9px 13px 0px rgba(0, 0, 0, 0.3);
-                box-shadow: 0px 9px 13px 0px rgba(0, 0, 0, 0.3);
-                -webkit-transform: scale(1)
-              }
+            .blog-tags ul {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              list-style: none;
+              padding-left: 0
+            }
 
-              .pds-blogs .blog-post:hover .blog-post--image img {
-                transform: scale(1.05)
-              }
+            .blog-tags li+li {
+              margin-left: .5rem
+            }
 
-              .pds-blogs .blog-post:hover:before {
-                bottom: 33%
-              }
+            .blog-tags a {
+              border: 1px solid #999;
+              border-radius: 3px;
+              color: #999;
+              font-size: .75rem;
+              height: 1.5rem;
+              line-height: 1.5rem;
+              letter-spacing: 1px;
+              padding: 0 .5rem;
+              text-align: center;
+              text-transform: uppercase;
+              white-space: nowrap;
+              width: 5rem
+            }
 
-              .pds-blogs .blog-post:before {
-                content: "";
-                display: block;
-                background-color: #fff;
-                bottom: 38%;
-                left: -5%;
-                z-index: 3;
-                width: 150%;
-                height: 25%;
-                position: absolute;
-                transform: rotate(8deg);
-                transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1)
-              }
+            .blog-footer {
+              border-top: 1px solid #e6e6e6;
+              margin: 0 auto;
+              padding-bottom: .125rem;
+              width: 80%
+            }
 
-              .pds-blogs .blog-post--image {
-                position: relative;
-                padding-bottom: 56.25%;
-                margin: 0;
-                overflow: hidden;
-                border-radius: 10px 10px 0 0;
-                cursor: pointer
-              }
+            .blog-footer ul {
+              list-style: none;
+              display: flex;
+              flex: row wrap;
+              justify-content: flex-end;
+              padding-left: 0
+            }
 
-              .pds-blogs .blog-post--image:hover:before {
-                opacity: 1
-              }
+            .blog-footer li:first-child {
+              margin-right: auto
+            }
 
-              .pds-blogs .blog-post--image:hover:after {
-                opacity: 1;
-                top: 50%
-              }
+            .blog-footer li+li {
+              margin-left: .5rem
+            }
 
-              .pds-blogs .blog-post--image img {
-                position: absolute;
-                top: -20px;
-                left: 0;
-                width: 100%;
-                height: auto;
-                display: block;
-                transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
-                backface-visibility: hidden
-              }
+            .blog-footer li {
+              color: #999;
+              font-size: .75rem;
+              height: 1.5rem;
+              letter-spacing: 1px;
+              line-height: 1.5rem;
+              text-align: center;
+              text-transform: uppercase;
+              position: relative;
+              white-space: nowrap
+            }
 
-              .pds-blogs .blog-post--description {
-                text-align: left;
-                position: relative;
-                z-index: 4;
-                padding: 5px 10px
-              }
+            .blog-footer li a {
+              color: #999
+            }
 
-              .pds-blogs .blog-post--tools {
-                padding-top: 20px;
-                padding-bottom: 20px;
-                position: relative
-              }
+            .published-date {
+              border: 1px solid #999;
+              border-radius: 3px;
+              padding: 0 .5rem
+            }
+          </style>
+          <div class="blog-container">
+            <div class="blog-header">
+              <div class="blog-cover" style="background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/17779/yosemite-3.jpg)"></div>
+            </div>
 
-              .pds-blogs .blog-post--tools:before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 5%;
-                width: 90%;
-                height: 1px;
-                background-color: #e0dfe1
-              }
+            <div class="blog-body">
+              <div class="blog-title">
+                <h1>Raspberry Setup</h1>
+              </div>
+              <div class="blog-summary">
+                <h2>Download Raspberry pi OS</h2>
+                <p>First go to the following site and download noobs zip:</p>
+                <p>https://www.raspberrypi.org/downloads/noobs/</p>
 
-              .pds-blogs a {
-                color: #e0dfe1;
-                text-decoration: none
-              }
+                <h2>Format SD Card</h2>
+                <p>This step is only needed if this a new SD card</p>
+                <p>For mac:</p>
+                <ul>
+                  <li class="pds-blogs-post-param">Open Disk Utility</li>
+                  <li class="pds-blogs-post-param">Select the SD card on left nav</li>
+                  <li class="pds-blogs-post-param">Click Erase</li>
+                  <li class="pds-blogs-post-param">Select MS-DOS</li>
+                  <li class="pds-blogs-post-param">Click Erase</li>
+                </ul>
 
-              .pds-blogs a:visited {
-                color: #e0dfe1
-              }
+                <h2>Copy files</h2>
+                <p>Once download is complete, extract zip</p>
+                <p>Copy the zip contents to SD card</p>
+                <p>Eject SD card</p>
 
-              .pds-blogs a:hover {
-                color: #9f9e9f
-              }
+                <h2>Connect Peripheral</h2>
+                <p>Insert micro USB into Raspberry pi</p>
+                <p>Plug-in USB keyboard and mouse to Raspberry pi</p>
+                <p>Plug-in HDMI to Raspberry pi</p>
+                <p>Plug-in 5V power supply</p>
+                <p>As soon as you plug it in, it will power up.</p>
 
-              .pds-blogs a:active {
-                color: #e0dfe1
-              }
+                <h2>Install OS</h2>
+                <p>Select your language at the bottom of the screen</p>
+                <p>Check raspbian</p>
+                <p>Click install. This part will take a while.</p>
+                <p>When it is done, go through setup and then reboot</p>
 
-              .pds-blogs .icon {
-                display: inline-block;
-                width: 32px;
-                height: 32px;
-                margin: 0 8%;
-                cursor: pointer
-              }
+                <h2>Configuration</h2>
+                <p>Click Raspberry in top left</p>
+                <p>Click Preferences</p>
+                <p>Click Raspberry PI Configuration</p>
+                <p>Change Hostname</p>
+                <p>Click Interfaces</p>
+                <p>Enable SSH and VNC/p>
+                </p>
+                <p>Click on and reboot</p>
 
-              .pds-blogs .icon svg {
-                fill: #e0dfe1;
-                transition: all 0.2s ease-in
-              }
+                <h2>SSH into</h2>
+                <p>Open terminal on Raspberry and run hostname -I</p>
+                <p>Open terminal on Mac and run ssh pi@<raspberry-ip class="pds-blogs-post-param">
 
-              .pds-blogs .icon:hover svg {
-                fill: #9f9e9f
-              }
+                    <h2>VNC into</h2>
+                    <p>download real vnc from:</p>
+                    <p>https://www.realvnc.com/en/connect/download/viewer/macos/</p>
+                    <p>Open VNC Viewer</p>
+                    <p>Insert ip</p>
+                    <p>Type user and password</p>
 
-              .pds-blogs .icon span {
-                text-transform: uppercase;
-                font-style: normal;
-                font-weight: 700;
-                letter-spacing: 1px;
-                font-size: 11px
-              }
-            </style>
-            <div class="blog-post-wrapper pds-blogs pds-blogs-blogs-card">
-              <div class="blog-post">
-                <figure class="blog-post--image">
-                  <img src="http://deghq.com/yapp/front-labs/codepen-assets/bmw-M4.jpg" alt="{blog.thumbnail.alt}" />
-                </figure>
-                <div class="blog-post--description">
-                  <h3>Raspberry Setup</h3>
-                  <p>{blog.params.blog.description}</p>
-                </div>
-                <div class="blog-post--tools">
-                  <a href="/blog/blogs/baspberry/setup">
-                    <i class="icon icon-view">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                        <path d="M 18 5 L 18 7 L 23.5625 7 L 11.28125 19.28125 L 12.71875 20.71875 L 25 8.4375 L 25 14 L 27 14 L 27 6 L 27 5 L 26 5 L 18 5 z M 5 9 L 5 27 L 23 27 L 23 14 L 21 16 L 21 25 L 7 25 L 7 11 L 16 11 L 18 9 L 5 9 z"></path>
-                      </svg>
-                      <span>READ</span>
-                    </i>
-                  </a>
+                    <p>Voila</p>
 
-                </div>
+                  </raspberry-ip>
+                </p>
+              </div>
+              <div class="blog-tags">
+                <ul>
+                  <li><a href="#">blog</a></li>
+                  <li><a href="#">raspberry</a></li>
+                </ul>
               </div>
             </div>
-            <div class="blog-post-wrapper pds-blogs pds-blogs-blogs-card">
-              <div class="blog-post">
-                <figure class="blog-post--image">
-                  <img src="http://deghq.com/yapp/front-labs/codepen-assets/bmw-M4.jpg" alt="{blog.thumbnail.alt}" />
-                </figure>
-                <div class="blog-post--description">
-                  <h3>Arduino Ping</h3>
-                  <p>A Ping Ultrasonic Range Finder is a basic building block of electronics, and integrating it with Arduino could not be any easier.</p>
-                </div>
-                <div class="blog-post--tools">
-                  <a href="/blog/arduino/ping">
-                    <i class="icon icon-view">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                        <path d="M 18 5 L 18 7 L 23.5625 7 L 11.28125 19.28125 L 12.71875 20.71875 L 25 8.4375 L 25 14 L 27 14 L 27 6 L 27 5 L 26 5 L 18 5 z M 5 9 L 5 27 L 23 27 L 23 14 L 21 16 L 21 25 L 7 25 L 7 11 L 16 11 L 18 9 L 5 9 z"></path>
-                      </svg>
-                      <span>READ</span>
-                    </i>
-                  </a>
 
-                </div>
-              </div>
+            <div class="blog-footer">
+              <ul>
+                <li class="published-date">1/28</li>
+              </ul>
             </div>
-            <div class="blog-post-wrapper pds-blogs pds-blogs-blogs-card">
-              <div class="blog-post">
-                <figure class="blog-post--image">
-                  <img src="http://deghq.com/yapp/front-labs/codepen-assets/bmw-M4.jpg" alt="{blog.thumbnail.alt}" />
-                </figure>
-                <div class="blog-post--description">
-                  <h3>Create a Node Package in es6</h3>
-                  <p>Go over the entire process of creatingn a node package in es6 from creating to using locally to deploying to npm</p>
-                </div>
-                <div class="blog-post--tools">
-                  <a href="/blog/blogs/js/create-np-es6">
-                    <i class="icon icon-view">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                        <path d="M 18 5 L 18 7 L 23.5625 7 L 11.28125 19.28125 L 12.71875 20.71875 L 25 8.4375 L 25 14 L 27 14 L 27 6 L 27 5 L 26 5 L 18 5 z M 5 9 L 5 27 L 23 27 L 23 14 L 21 16 L 21 25 L 7 25 L 7 11 L 16 11 L 18 9 L 5 9 z"></path>
-                      </svg>
-                      <span>READ</span>
-                    </i>
-                  </a>
-
-                </div>
-              </div>
-            </div>
-            <div class="blog-post-wrapper pds-blogs pds-blogs-blogs-card">
-              <div class="blog-post">
-                <figure class="blog-post--image">
-                  <img src="http://deghq.com/yapp/front-labs/codepen-assets/bmw-M4.jpg" alt="{blog.thumbnail.alt}" />
-                </figure>
-                <div class="blog-post--description">
-                  <h3>How crop an image in python</h3>
-                  <p>Croping a photo could not be any easier in python</p>
-                </div>
-                <div class="blog-post--tools">
-                  <a href="/blog/blogs/python/image-crop">
-                    <i class="icon icon-view">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                        <path d="M 18 5 L 18 7 L 23.5625 7 L 11.28125 19.28125 L 12.71875 20.71875 L 25 8.4375 L 25 14 L 27 14 L 27 6 L 27 5 L 26 5 L 18 5 z M 5 9 L 5 27 L 23 27 L 23 14 L 21 16 L 21 25 L 7 25 L 7 11 L 16 11 L 18 9 L 5 9 z"></path>
-                      </svg>
-                      <span>READ</span>
-                    </i>
-                  </a>
-
-                </div>
-              </div>
-            </div>
-            <div class="blog-post-wrapper pds-blogs pds-blogs-blogs-card">
-              <div class="blog-post">
-                <figure class="blog-post--image">
-                  <img src="http://deghq.com/yapp/front-labs/codepen-assets/bmw-M4.jpg" alt="{blog.thumbnail.alt}" />
-                </figure>
-                <div class="blog-post--description">
-                  <h3>How capture webcam in python</h3>
-                  <p>Getting access to your webcam is could not be any easier in python</p>
-                </div>
-                <div class="blog-post--tools">
-                  <a href="/blog/blogs/python/webcam">
-                    <i class="icon icon-view">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                        <path d="M 18 5 L 18 7 L 23.5625 7 L 11.28125 19.28125 L 12.71875 20.71875 L 25 8.4375 L 25 14 L 27 14 L 27 6 L 27 5 L 26 5 L 18 5 z M 5 9 L 5 27 L 23 27 L 23 14 L 21 16 L 21 25 L 7 25 L 7 11 L 16 11 L 18 9 L 5 9 z"></path>
-                      </svg>
-                      <span>READ</span>
-                    </i>
-                  </a>
-
-                </div>
-              </div>
-            </div>
-            <div class="blog-post-wrapper pds-blogs pds-blogs-blogs-card">
-              <div class="blog-post">
-                <figure class="blog-post--image">
-                  <img src="http://deghq.com/yapp/front-labs/codepen-assets/bmw-M4.jpg" alt="{blog.thumbnail.alt}" />
-                </figure>
-                <div class="blog-post--description">
-                  <h3>OSX install matplotlib without anaconda</h3>
-                  <p>Installing matplotlib without anaconda is not so easy, so here is how I got it to work on my mac.</p>
-                </div>
-                <div class="blog-post--tools">
-                  <a href="/blog/blogs/osx-matplotlib">
-                    <i class="icon icon-view">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                        <path d="M 18 5 L 18 7 L 23.5625 7 L 11.28125 19.28125 L 12.71875 20.71875 L 25 8.4375 L 25 14 L 27 14 L 27 6 L 27 5 L 26 5 L 18 5 z M 5 9 L 5 27 L 23 27 L 23 14 L 21 16 L 21 25 L 7 25 L 7 11 L 16 11 L 18 9 L 5 9 z"></path>
-                      </svg>
-                      <span>READ</span>
-                    </i>
-                  </a>
-
-                </div>
-              </div>
-            </div>
+            <script type="text/javascript">
+              ! function() {
+                var e;
+                (e = ".code-pad", Array.apply(null, document.querySelectorAll(e))).forEach(function(e) {
+                  CodeMirror.fromTextArea(e, {
+                    mode: "python",
+                    lineNumbers: !0,
+                    matchBrackets: !0,
+                    readOnly: !0,
+                    lineWiseCopyCut: !0
+                  }).setSize(null, 100)
+                })
+              }();
+            </script>
           </div>
         </div>
       </div>
