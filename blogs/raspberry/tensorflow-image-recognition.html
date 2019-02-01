@@ -17333,6 +17333,46 @@ $ pip3 install opencv-python</textarea>
                   <!-- type="text/css" compressed  once >already included style sheet</!-->
                   <textarea id='demotext' class="code-pad">$ sudo apt-get install autoconf automake libtool curl</textarea>
                 </div>
+
+                <p>Go to:</p>
+                <p>https://github.com/protocolbuffers/protobuf/releases</p>
+                <p>copy url for:</p>
+                <p>protobuf-all-X.X.X.tar.gz</p>
+                <div class=" pds-blogs-post-param pds-blogs-post-param-code">
+                  <!-- type="text/javascript" once >already included javascript</!-->
+                  <!-- type="text/javascript" once >already included javascript</!-->
+                  <!-- type="text/css" compressed  once >already included style sheet</!-->
+                  <textarea id='demotext' class="code-pad">$ wget url-from-protobuf-releases
+$ tar -zxvf protobuf-all-X.x.X.tar.gz
+$ cd protobuf-X.X.X/
+$ ./configure
+$ make
+$ make check
+$ sudo make install
+$ cd python
+$ export LD_LIBRARY_PATH=../src/.libs
+$ python3 setup.py build --cpp_implementation
+$ python3 setup.py test --cpp_implementation
+$ sudo python3 setup.py install --cpp_implementation
+$ export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=cpp
+$ export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION_VERSION=3
+$ sudo ldconfig</textarea>
+                </div>
+                <p>Now protobuf is installed, you can test it be entering the following command:</p>
+                <div class=" pds-blogs-post-param pds-blogs-post-param-code">
+                  <!-- type="text/javascript" once >already included javascript</!-->
+                  <!-- type="text/javascript" once >already included javascript</!-->
+                  <!-- type="text/css" compressed  once >already included style sheet</!-->
+                  <textarea id='demotext' class="code-pad">$ protoc</textarea>
+                </div>
+
+                <p>To get tenorflow working, reboot Raspberry pi</p>
+                <div class=" pds-blogs-post-param pds-blogs-post-param-code">
+                  <!-- type="text/javascript" once >already included javascript</!-->
+                  <!-- type="text/javascript" once >already included javascript</!-->
+                  <!-- type="text/css" compressed  once >already included style sheet</!-->
+                  <textarea id='demotext' class="code-pad">$ sudo reboot now</textarea>
+                </div>
               </div>
               <div class="blog-tags">
                 <ul>
