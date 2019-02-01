@@ -17373,6 +17373,35 @@ $ sudo ldconfig</textarea>
                   <!-- type="text/css" compressed  once >already included style sheet</!-->
                   <textarea id='demotext' class="code-pad">$ sudo reboot now</textarea>
                 </div>
+
+                <h3>Setup tensorflow</h3>
+                <div class=" pds-blogs-post-param pds-blogs-post-param-code">
+                  <!-- type="text/javascript" once >already included javascript</!-->
+                  <!-- type="text/javascript" once >already included javascript</!-->
+                  <!-- type="text/css" compressed  once >already included style sheet</!-->
+                  <textarea id='demotext' class="code-pad">$ mkdir tensorflow1
+$ cd tensorflow1
+$ git clone --recurse-submodules https://github.com/tensorflow/models.git
+$ sudo apt-get install vim
+$ sudo vim ~/.bashrc</textarea>
+                </div>
+
+                <ul>
+                  <li class="pds-blogs-post-param">$ esacpe</li>
+                  <li class="pds-blogs-post-param">:</li>
+                  <li class="pds-blogs-post-param">$</li>
+                  <li class="pds-blogs-post-param">enter</li>
+                  <li class="pds-blogs-post-param">i</li>
+                  <li class="pds-blogs-post-param">add the following to the end of the file</li>
+                  <li class="pds-blogs-post-param">export PYTHONPATH=$PYTHONPATH:/home/pi/tensorflow1/models/research:/home/pi/tensorflow1/models/research/slim</li>
+                </ul>
+
+                <div class=" pds-blogs-post-param pds-blogs-post-param-code">
+                  <!-- type="text/javascript" once >already included javascript</!-->
+                  <!-- type="text/javascript" once >already included javascript</!-->
+                  <!-- type="text/css" compressed  once >already included style sheet</!-->
+                  <textarea id='demotext' class="code-pad">$ cd tensorflow1/models/research/object_detection/</textarea>
+                </div>
               </div>
               <div class="blog-tags">
                 <ul>
