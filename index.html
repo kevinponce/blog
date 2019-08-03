@@ -1,27 +1,27 @@
-<html class=" pds-home pds-home-layout">
+<html class=" pds-home pds-home-layout-default">
 
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type="text/css">
       @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300,600,800,400);
 
-      html.pds-home-layout,
-      .pds-home-layout html,
-      .pds-home-layout body {
+      html.pds-home-layout-default,
+      .pds-home-layout-default html,
+      .pds-home-layout-default body {
         margin: 0;
         padding: 0;
         background: #5d676c;
         font-family: 'Open Sans', sans-serif
       }
 
-      .pds-home-layout .l-site {
+      .pds-home-layout-default .l-site {
         margin: 0 auto;
         max-width: 1600px;
         position: relative;
         z-index: 1
       }
 
-      .pds-home-layout .l-site:before {
+      .pds-home-layout-default .l-site:before {
         content: "";
         position: fixed;
         top: 0;
@@ -33,7 +33,7 @@
         z-index: 1
       }
 
-      .pds-home-layout .l-page {
+      .pds-home-layout-default .l-page {
         position: relative;
         margin-left: 240px;
         background: #fff;
@@ -42,7 +42,7 @@
         transition: 0.35s
       }
 
-      .pds-home-layout .l-nav {
+      .pds-home-layout-default .l-nav {
         position: absolute;
         width: 240px;
         display: block;
@@ -53,7 +53,7 @@
         z-index: 3
       }
 
-      .pds-home-layout .nav {
+      .pds-home-layout-default .nav {
         width: 180px;
         position: fixed;
         top: 0;
@@ -63,19 +63,19 @@
         overflow: auto
       }
 
-      .pds-home-layout .nav ul {
+      .pds-home-layout-default .nav ul {
         margin: 0;
         padding: 0;
         list-style: none
       }
 
-      .pds-home-layout .nav li {
+      .pds-home-layout-default .nav li {
         margin: 0;
         padding: 0;
         transition: 0.25s
       }
 
-      .pds-home-layout .nav a {
+      .pds-home-layout-default .nav a {
         color: #fff;
         text-decoration: none;
         font-size: 20px;
@@ -84,23 +84,23 @@
         padding: 10px 0
       }
 
-      .pds-home-layout .nav .nav-primary {
+      .pds-home-layout-default .nav .nav-primary {
         opacity: 1
       }
 
-      .pds-home-layout .nav .nav-primary:hover {
+      .pds-home-layout-default .nav .nav-primary:hover {
         opacity: 0.7
       }
 
-      .pds-home-layout .nav .nav-secondary {
+      .pds-home-layout-default .nav .nav-secondary {
         opacity: 0.4
       }
 
-      .pds-home-layout .nav .nav-secondary:hover {
+      .pds-home-layout-default .nav .nav-secondary:hover {
         opacity: 0.7
       }
 
-      .pds-home-layout .menu {
+      .pds-home-layout-default .menu {
         display: none;
         position: fixed;
         top: 25px;
@@ -111,17 +111,17 @@
         z-index: 10
       }
 
-      .pds-home-layout .menu:hover .menu-hamburger:before,
-      .pds-home-layout .menu:hover .menu-hamburger:after {
+      .pds-home-layout-default .menu:hover .menu-hamburger:before,
+      .pds-home-layout-default .menu:hover .menu-hamburger:after {
         width: 24px
       }
 
-      .pds-home-layout .menu.is-active .menu-hamburger {
+      .pds-home-layout-default .menu.is-active .menu-hamburger {
         background: none
       }
 
-      .pds-home-layout .menu.is-active .menu-hamburger:before,
-      .pds-home-layout .menu.is-active .menu-hamburger:after {
+      .pds-home-layout-default .menu.is-active .menu-hamburger:before,
+      .pds-home-layout-default .menu.is-active .menu-hamburger:after {
         top: 0;
         width: 24px;
         -webkit-transform: rotate(45deg);
@@ -129,19 +129,19 @@
         transform: rotate(45deg)
       }
 
-      .pds-home-layout .menu.is-active .menu-hamburger:after {
+      .pds-home-layout-default .menu.is-active .menu-hamburger:after {
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         transform: rotate(-45deg)
       }
 
-      .pds-home-layout .menu.is-active .menu-hamburger:hover {
+      .pds-home-layout-default .menu.is-active .menu-hamburger:hover {
         -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
         transform: scale(1.2)
       }
 
-      .pds-home-layout .menu-hamburger {
+      .pds-home-layout-default .menu-hamburger {
         position: relative;
         width: 24px;
         height: 4px;
@@ -151,8 +151,8 @@
         transition: all 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
       }
 
-      .pds-home-layout .menu-hamburger:before,
-      .pds-home-layout .menu-hamburger:after {
+      .pds-home-layout-default .menu-hamburger:before,
+      .pds-home-layout-default .menu-hamburger:after {
         content: '';
         display: block;
         width: 24px;
@@ -163,25 +163,25 @@
         transition: all 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
       }
 
-      .pds-home-layout .menu-hamburger:before {
+      .pds-home-layout-default .menu-hamburger:before {
         top: -8px;
         left: 0;
         width: 22px
       }
 
-      .pds-home-layout .menu-hamburger:after {
+      .pds-home-layout-default .menu-hamburger:after {
         top: 8px;
         width: 16px;
         left: 0
       }
 
-      .pds-home-layout .menu-hamburger.dark,
-      .pds-home-layout .menu-hamburger.dark:before,
-      .pds-home-layout .menu-hamburger.dark:after {
+      .pds-home-layout-default .menu-hamburger.dark,
+      .pds-home-layout-default .menu-hamburger.dark:before,
+      .pds-home-layout-default .menu-hamburger.dark:after {
         background: #000
       }
 
-      .pds-home-layout .child-wrapper {
+      .pds-home-layout-default .child-wrapper {
         background-color: #fff;
         float: left;
         width: 100%;
@@ -190,53 +190,53 @@
       }
 
       @media screen and (max-width: 980px) {
-        .pds-home-layout .menu {
+        .pds-home-layout-default .menu {
           display: block
         }
 
-        .pds-home-layout .l-site.is-open {
+        .pds-home-layout-default .l-site.is-open {
           overflow: hidden
         }
 
-        .pds-home-layout .l-site.is-open .l-page {
+        .pds-home-layout-default .l-site.is-open .l-page {
           transform: translateX(240px)
         }
 
-        .pds-home-layout .l-page {
+        .pds-home-layout-default .l-page {
           margin-left: 0;
           z-index: 3
         }
 
-        .pds-home-layout .l-nav {
+        .pds-home-layout-default .l-nav {
           z-index: 2
         }
       }
 
-      html.pds-home-layout,
-      .pds-home-layout html {
+      html.pds-home-layout-default,
+      .pds-home-layout-default html {
         font-size: 10px
       }
 
       @media only screen and (max-width: 1024px) {
 
-        html.pds-home-layout,
-        .pds-home-layout html {
+        html.pds-home-layout-default,
+        .pds-home-layout-default html {
           font-size: 9.411764705882353px
         }
       }
 
       @media only screen and (max-width: 768px) {
 
-        html.pds-home-layout,
-        .pds-home-layout html {
+        html.pds-home-layout-default,
+        .pds-home-layout-default html {
           font-size: 10px
         }
       }
 
       @media only screen and (max-width: 400px) {
 
-        html.pds-home-layout,
-        .pds-home-layout html {
+        html.pds-home-layout-default,
+        .pds-home-layout-default html {
           font-size: 9.411764705882353px
         }
       }
