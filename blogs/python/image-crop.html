@@ -3340,8 +3340,8 @@
             }
 
             .CodeMirror-scroll {
-              height: auto;
-              overflow: hidden
+              overflow-y: hidden;
+              overflow-x: auto
             }
           </style>
           <div class="blog-container">
@@ -17338,8 +17338,10 @@ cv2.imwrite(example_croped, example)</textarea>
                     lineNumbers: !0,
                     matchBrackets: !0,
                     readOnly: !0,
-                    lineWiseCopyCut: !0
-                  }).setSize(null, "100%")
+                    lineWiseCopyCut: !0,
+                    indentWithTabs: !0,
+                    viewportMargin: 1 / 0
+                  })
                 })
               }();
             </script>
