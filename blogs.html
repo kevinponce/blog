@@ -3994,13 +3994,13 @@
       });
     </script>
     <script type="text/javascript">
-      ! function() {
-        var e = document.querySelector(".blogs-wrapper");
-        new Masonry(e, {
+      window.onload = function() {
+        var o = document.querySelector(".blogs-wrapper");
+        new Masonry(o, {
           itemSelector: ".blog-post-wrapper",
           percentPosition: !0
         })
-      }();
+      };
     </script>
   </head>
 
@@ -4092,8 +4092,7 @@
               .pds-blogs p {
                 color: #9f9e9f;
                 font-size: 14px;
-                line-height: 1.6em;
-                height: 100px
+                line-height: 1.6em
               }
 
               .pds-blogs .blog-post-wrapper {
