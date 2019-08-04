@@ -17300,7 +17300,7 @@
                       background: none
                     }
                   </style>
-                  <textarea id='demotext' class="code-pad">$ pip3 install tensorflow</textarea>
+                  <textarea class="code-pad">$ pip3 install tensorflow</textarea>
                 </div>
 
                 <h3>Install Protobuf</h3>
@@ -17308,7 +17308,7 @@
                   <!-- type="text/javascript" once >already included javascript</!-->
                   <!-- type="text/javascript" once >already included javascript</!-->
                   <!-- type="text/css" compressed  once >already included style sheet</!-->
-                  <textarea id='demotext' class="code-pad">$ brew install protobuf</textarea>
+                  <textarea class="code-pad">$ brew install protobuf</textarea>
                 </div>
 
                 <h3>Set up tensorflow models</h3>
@@ -17316,7 +17316,7 @@
                   <!-- type="text/javascript" once >already included javascript</!-->
                   <!-- type="text/javascript" once >already included javascript</!-->
                   <!-- type="text/css" compressed  once >already included style sheet</!-->
-                  <textarea id='demotext' class="code-pad">$ cd ~/
+                  <textarea class="code-pad">$ cd ~/
 $ mkdir tensorflow-models
 $ cd tensorflow-models/
 $ git clone --recurse-submodules https://github.com/tensorflow/models.git</textarea>
@@ -17330,7 +17330,7 @@ $ git clone --recurse-submodules https://github.com/tensorflow/models.git</texta
                   <!-- type="text/javascript" once >already included javascript</!-->
                   <!-- type="text/javascript" once >already included javascript</!-->
                   <!-- type="text/css" compressed  once >already included style sheet</!-->
-                  <textarea id='demotext' class="code-pad">$ curl link-from-about -O
+                  <textarea class="code-pad">$ curl link-from-about -O
 $ tar -xzvf file-download-above
 $ cd ~/tensorflow-modesl/models/research
 $ protoc object_detection/protos/*.proto --python_out=.</textarea>
@@ -17342,7 +17342,7 @@ $ protoc object_detection/protos/*.proto --python_out=.</textarea>
                   <!-- type="text/javascript" once >already included javascript</!-->
                   <!-- type="text/javascript" once >already included javascript</!-->
                   <!-- type="text/css" compressed  once >already included style sheet</!-->
-                  <textarea id='demotext' class="code-pad">$ export PYTHONPATH=$PYTHONPATH:/Users/kevinponce/Programming/tensorflow-models/models/research:/Users/kevinponce/Programming/tensorflow-modelsmodels/research/slim</textarea>
+                  <textarea class="code-pad">$ export PYTHONPATH=$PYTHONPATH:/Users/kevinponce/Programming/tensorflow-models/models/research:/Users/kevinponce/Programming/tensorflow-modelsmodels/research/slim</textarea>
                 </div>
 
                 <h3>Create image detection python script</h3>
@@ -17350,19 +17350,16 @@ $ protoc object_detection/protos/*.proto --python_out=.</textarea>
                   <!-- type="text/javascript" once >already included javascript</!-->
                   <!-- type="text/javascript" once >already included javascript</!-->
                   <!-- type="text/css" compressed  once >already included style sheet</!-->
-                  <textarea id='demotext' class="code-pad">$ cd ~/tensorflow-modeslmodels/research/object_detection/
+                  <textarea class="code-pad">$ cd ~/tensorflow-modeslmodels/research/object_detection/
 $ touch play_object_detection.py
-$ sudo vim play_object_detection.py
-<div class=" pds-blogs-post-param pds-blogs-post-param-code">
-  <!-- type="text/javascript" once >already included javascript</!-->
-  <!-- type="text/javascript" once >already included javascript</!-->
-  <!-- type="text/css" compressed  once >already included style sheet</!-->
-  <textarea id='demotext' class="code-pad"><p>Save the following code to play_object_detection.py</p>
-<div class=" pds-blogs-post-param pds-blogs-post-param-code">
-  <!-- type="text/javascript" once >already included javascript</!-->
-  <!-- type="text/javascript" once >already included javascript</!-->
-  <!-- type="text/css" compressed  once >already included style sheet</!-->
-  <textarea id='demotext' class="code-pad"># Import packages
+$ sudo vim play_object_detection.py</textarea>
+                </div>
+                <p>Save the following code to play_object_detection.py</p>
+                <div class=" pds-blogs-post-param pds-blogs-post-param-code">
+                  <!-- type="text/javascript" once >already included javascript</!-->
+                  <!-- type="text/javascript" once >already included javascript</!-->
+                  <!-- type="text/css" compressed  once >already included style sheet</!-->
+                  <textarea class="code-pad"># Import packages
 import os
 import cv2
 import numpy as np
@@ -17494,45 +17491,44 @@ cv2.destroyAllWindows()</textarea>
                   <!-- type="text/javascript" once >already included javascript</!-->
                   <!-- type="text/javascript" once >already included javascript</!-->
                   <!-- type="text/css" compressed  once >already included style sheet</!-->
-                  <textarea id='demotext' class="code-pad">$ python3 play_object_detection.py</textarea>
+                  <textarea class="code-pad">$ python3 play_object_detection.py</textarea>
                 </div>
 
                 <p>Press q when you are complete</p>
-                <p>Voila</p></textarea>
-              </div></textarea>
-            </div>
-          </div>
-          <div class="blog-tags">
-            <ul>
-              <li><a href="#">blog</a></li>
-              <li><a href="#">tensorflow</a></li>
-              <li><a href="#">python</a></li>
-            </ul>
-          </div>
-        </div>
+                <p>Voila</p>
 
-        <div class="blog-footer">
-          <ul>
-            <li class="published-date">2/2</li>
-          </ul>
+              </div>
+              <div class="blog-tags">
+                <ul>
+                  <li><a href="#">blog</a></li>
+                  <li><a href="#">tensorflow</a></li>
+                  <li><a href="#">python</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="blog-footer">
+              <ul>
+                <li class="published-date">2/2</li>
+              </ul>
+            </div>
+            <script type="text/javascript">
+              ! function() {
+                var e;
+                (e = ".code-pad", Array.apply(null, document.querySelectorAll(e))).forEach(function(e) {
+                  CodeMirror.fromTextArea(e, {
+                    mode: "python",
+                    lineNumbers: !0,
+                    matchBrackets: !0,
+                    readOnly: !0,
+                    lineWiseCopyCut: !0
+                  }).setSize(null, "100%")
+                })
+              }();
+            </script>
+          </div>
         </div>
-        <script type="text/javascript">
-          ! function() {
-            var e;
-            (e = ".code-pad", Array.apply(null, document.querySelectorAll(e))).forEach(function(e) {
-              CodeMirror.fromTextArea(e, {
-                mode: "python",
-                lineNumbers: !0,
-                matchBrackets: !0,
-                readOnly: !0,
-                lineWiseCopyCut: !0
-              })
-            })
-          }();
-        </script>
       </div>
-    </div>
-    </div>
     </div>
   </body>
 
