@@ -3994,11 +3994,13 @@
       });
     </script>
     <script type="text/javascript">
-      var grid = document.querySelector(".blogs-wrapper"),
-        msnry = new Masonry(grid, {
+      ! function() {
+        var e = document.querySelector(".blogs-wrapper");
+        new Masonry(e, {
           itemSelector: ".blog-post-wrapper",
-          columnWidth: 200
-        });
+          percentPosition: !0
+        })
+      }();
     </script>
   </head>
 
